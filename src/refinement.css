@@ -1,0 +1,426 @@
+/* Larger, presentation-scale type while preserving the existing KLIK I.T. theme. */
+:root {
+  --header: 76px;
+  --controls: 74px;
+}
+
+.site-header { gap: 22px; }
+.brand { width: 136px; }
+.overview-button, .print-button { font-size: 12px; padding: 11px 15px; }
+.overview-grid-icon { font-size: 17px; }
+.print-button span { font-size: 16px; }
+
+.cover { padding: clamp(32px, 5vh, 58px) clamp(32px, 7vw, 100px) 18px; }
+.cover-copy { max-width: 650px; }
+.cover h1 { font-size: clamp(88px, 10vw, 148px); margin-bottom: 24px; }
+.cover .eyebrow { font-size: 12px; margin-bottom: 23px; }
+.cover-subtitle { font-size: clamp(20px, 1.9vw, 26px); }
+.cover-tagline { font-size: clamp(22px, 2vw, 28px); max-width: 530px; margin-top: 24px; }
+.cover-rule { margin: 34px 0 19px; }
+.cover-meta { gap: 45px; }
+.cover-meta span { font-size: 10px; }
+.cover-meta strong { font-size: 14px; }
+.cover-art { max-width: 520px; height: min(58vh, 470px); padding: 21px; }
+.cover-art-top, .cover-art-bottom { font-size: 9px; }
+.art-square { width: min(27vh, 190px); height: min(27vh, 190px); }
+.art-square-front { font-size: 96px; }
+.art-caption { font-size: 9px; }
+.mark-corner { width: 42px; height: 42px; }
+.mark-tl { top: 33px; left: 34px; }
+.mark-br { bottom: 37px; right: 34px; }
+.cover-bottom { padding-top: 13px; font-size: 9px; }
+
+.content-slide { padding: clamp(28px, 4.2vh, 42px) clamp(34px, 6.5vw, 94px); }
+.slide-inner { width: min(100%, 1280px); }
+.slide-heading { gap: 15px; margin-bottom: clamp(17px, 2.5vh, 26px); }
+.slide-heading .eyebrow { font-size: 12px; }
+.slide-number { font-size: 11px; }
+.content-slide h2 { font-size: clamp(42px, 5.5vh, 52px); margin-bottom: clamp(18px, 2.6vh, 26px); }
+.slide-footerline { font-size: 9px; padding-top: 11px; }
+
+.summary-copy { max-width: 1160px; gap: 20px 64px; }
+.summary-copy p { font-size: 18px; line-height: 1.6; }
+.summary-copy p:first-child { font-size: 21px; line-height: 1.5; }
+.summary-copy strong { font-size: 21px; }
+.overview-lead { max-width: 1080px; font-size: 21px; line-height: 1.55; margin-bottom: 19px; }
+.overview-support { max-width: 1050px; font-size: 17px; line-height: 1.65; margin-bottom: 28px; }
+.vision-mission { max-width: 1120px; gap: 22px; }
+.vision-mission article { padding: 18px 22px; }
+.vision-mission article span, .mini-label { font-size: 11px; }
+.vision-mission article p { font-size: 17px; line-height: 1.55; margin-top: 9px; }
+
+.service-cards { margin-top: 24px; }
+.service-cards article { min-height: 285px; padding: 25px 26px 25px 0; }
+.service-cards article + article { padding-left: 26px; }
+.card-index { font-size: 12px; }
+.service-cards h3 { font-size: 21px; line-height: 1.3; margin: 17px 0 12px; }
+.service-cards p { max-width: 360px; font-size: 17px; line-height: 1.65; }
+.card-rule { width: 34px; }
+
+.market-model-grid { gap: clamp(36px, 6vw, 80px); margin-top: 18px; }
+.market-list { padding: 25px 0; }
+.market-list ul { margin-top: 19px; }
+.market-list li { font-size: 19px; padding: 12px 0; }
+.model-panel { padding: 30px 34px; }
+.panel-symbol { font-size: 36px; right: 27px; top: 22px; }
+.model-panel .mini-label { margin: 14px 0 16px; }
+.model-panel p:not(.mini-label) { max-width: 540px; font-size: 16px; line-height: 1.7; margin-bottom: 18px; }
+
+.founder-layout { gap: clamp(36px, 6vw, 80px); }
+.founder-photo img { height: min(45vh, 390px); }
+.founder-photo figcaption { padding: 12px 15px; font-size: 10px; }
+.founder-photo figcaption span { font-size: 9px; }
+.founder-copy h2 { font-size: clamp(42px, 5vh, 50px); margin-bottom: 17px; }
+.founder-copy p { max-width: 720px; font-size: 16px; line-height: 1.62; margin-bottom: 14px; }
+
+.progress-layout { gap: clamp(30px, 5vw, 68px); }
+.progress-layout .mini-label { line-height: 1.5; }
+.check-list, .outcome-list { margin-top: 14px; }
+.check-list li { padding: 10px 0 10px 26px; font-size: 15px; line-height: 1.55; }
+.check-list li::before { top: 9px; font-size: 16px; }
+.work-evidence { gap: 13px; margin: 12px 0; }
+.work-image img { height: clamp(120px, 19vh, 180px); }
+.work-image span { padding: 9px 11px; font-size: 9px; }
+.evidence-note { padding: 13px 16px; margin: 5px 0 15px; font-size: 13px; line-height: 1.6; }
+
+.needs-layout { gap: clamp(36px, 6vw, 82px); }
+.needs-lead { font-size: 21px; line-height: 1.6; max-width: 500px; }
+.needs-list .mini-label { padding: 15px 0 8px; }
+.needs-list li { grid-template-columns: 34px 1fr; gap: 12px; padding: 13px 0; font-size: 16px; line-height: 1.55; }
+.needs-list li span { font-size: 11px; }
+
+.section-deck { font-size: 18px; margin-bottom: 22px; }
+.strategy-cards article { grid-template-columns: 38px 1fr; gap: 13px; padding: 21px 23px; }
+.strategy-cards article > span { font-size: 11px; padding-top: 4px; }
+.strategy-cards h3 { font-size: 20px; margin-bottom: 7px; }
+.strategy-cards p { max-width: 510px; font-size: 16px; line-height: 1.6; }
+
+.roadmap-phases article { min-height: clamp(270px, 34vh, 340px); padding: 22px 23px 20px 0; }
+.roadmap-phases article + article { padding-left: 23px; }
+.phase-top { gap: 13px; font-size: 10px; }
+.roadmap-phases h3 { font-size: 21px; margin: 13px 0 12px; }
+.roadmap-phases li { font-size: 15px; line-height: 1.52; padding: 0 0 11px 16px; }
+
+.funding-heading { grid-template-columns: .75fr 1.25fr; gap: 40px; margin-bottom: 22px; }
+.funding-heading h2 strong { font-size: clamp(58px, 7vh, 76px); }
+.funding-heading h2 span { font-size: 15px; margin-top: 8px; }
+.funding-heading > p { max-width: 630px; font-size: 16px; line-height: 1.65; }
+.budget-table-wrap { max-width: 1040px; }
+.budget-table th { font-size: 12px; padding: 12px 16px; }
+.budget-table th:last-child, .budget-table td:last-child { width: 180px; }
+.budget-table td { font-size: 17px; padding: 14px 16px; }
+.budget-table tbody tr td:last-child { font-size: 17px; }
+.budget-table tfoot td { padding: 15px 16px; }
+.budget-caveat { max-width: 1040px; font-size: 13px; margin-top: 15px; }
+
+.outcomes-layout { gap: clamp(36px, 6vw, 75px); }
+.outcome-list { margin-top: 12px; }
+.outcome-list li { padding: 9px 0 9px 24px; font-size: 15px; line-height: 1.5; }
+.outcome-list li::before { font-size: 15px; }
+.closing-copy { padding-left: clamp(26px, 4vw, 48px); }
+.closing-promise { font-size: 22px; margin-bottom: 16px; }
+.closing-copy > p:not(.closing-promise) { font-size: 15px; line-height: 1.6; margin-bottom: 13px; }
+.signature { gap: 4px; padding-top: 13px; margin-top: 14px; }
+.signature strong { font-size: 15px; }
+.signature span, .signature a { font-size: 12px; }
+.signature a { margin-top: 5px; }
+.closing-footer { gap: 17px; padding: 12px 0; }
+.closing-footer img { width: 76px; }
+.closing-footer span { font-size: 8px; }
+
+.slide-controls { padding: 0 clamp(20px, 5vw, 74px); }
+.slide-nav { min-width: 128px; gap: 11px; font-size: 23px; }
+.slide-nav .nav-word { font-size: 10px; }
+.slide-position { gap: 13px; font-size: 11px; }
+.slide-position span:first-child { font-size: 16px; }
+.slide-position i { width: 29px; }
+.overview-dialog { width: min(800px, calc(100vw - 40px)); padding: 30px 34px 23px; }
+.overview-head h2 { font-size: 30px; }
+.overview-head .eyebrow { font-size: 10px; }
+.overview-grid { gap: 10px; }
+.overview-card { grid-template-columns: 34px 1fr 18px; gap: 11px; padding: 12px 14px; }
+.overview-number { font-size: 10px; }
+.overview-label { font-size: 12px; }
+.overview-hint { font-size: 10px; }
+
+@media (max-width: 1100px) {
+  .content-slide { padding-left: clamp(28px, 5vw, 58px); padding-right: clamp(28px, 5vw, 58px); }
+  .slide-inner { width: 100%; }
+  .content-slide h2 { font-size: clamp(38px, 5.2vh, 48px); }
+  .summary-copy { gap: 16px 34px; }
+  .summary-copy p { font-size: 16px; }
+  .summary-copy p:first-child { font-size: 19px; }
+  .overview-lead, .needs-lead { font-size: 18px; }
+  .overview-support { font-size: 15px; }
+  .vision-mission article p { font-size: 15px; }
+  .service-cards h3 { font-size: 18px; }
+  .service-cards p { font-size: 14px; }
+  .founder-copy p { font-size: 14px; }
+  .check-list li, .roadmap-phases li { font-size: 13px; }
+  .strategy-cards h3 { font-size: 17px; }
+  .strategy-cards p { font-size: 13px; }
+  .needs-list li { font-size: 14px; }
+  .budget-table td { font-size: 15px; }
+  .outcome-list li { font-size: 13px; }
+  .closing-copy > p:not(.closing-promise) { font-size: 13px; }
+}
+
+@media (max-width: 700px) {
+  :root { --header: 62px; --controls: 58px; }
+  .site-header { gap: 9px; padding: 0 16px; }
+  .brand { width: 108px; }
+  .overview-button, .print-button { font-size: 10px; padding: 9px 11px; }
+  .content-slide { padding: 13px 24px; }
+  .slide-heading { gap: 9px; margin-bottom: 12px; }
+  .slide-heading .eyebrow { font-size: 10px; }
+  .slide-number { font-size: 9px; }
+  .content-slide h2 { font-size: clamp(32px, 5.1vw, 40px); margin-bottom: 13px; }
+  .slide-footerline { font-size: 7px; padding-top: 8px; }
+  .summary-copy { gap: 11px 24px; }
+  .summary-copy p { font-size: 13px; line-height: 1.52; }
+  .summary-copy p:first-child { font-size: 16px; }
+  .summary-copy strong { font-size: 16px; }
+  .overview-lead { font-size: 16px; line-height: 1.48; margin-bottom: 10px; }
+  .overview-support { font-size: 12px; line-height: 1.55; margin-bottom: 13px; }
+  .vision-mission { gap: 10px; }
+  .vision-mission article { padding: 10px 12px; }
+  .vision-mission article span, .mini-label { font-size: 8px; }
+  .vision-mission article p { font-size: 12px; line-height: 1.45; margin-top: 5px; }
+  .service-cards { margin-top: 8px; }
+  .service-cards article { min-height: 215px; padding: 13px 11px 13px 0; }
+  .service-cards article + article { padding-left: 11px; }
+  .card-index { font-size: 9px; }
+  .service-cards h3 { font-size: 14px; margin: 9px 0 6px; }
+  .service-cards p { font-size: 11px; line-height: 1.48; }
+  .market-model-grid { gap: 20px; margin-top: 4px; }
+  .market-list { padding: 11px 0; }
+  .market-list ul { margin-top: 8px; }
+  .market-list li { font-size: 14px; padding: 6px 0; }
+  .model-panel { padding: 13px 15px; }
+  .model-panel p:not(.mini-label) { font-size: 11px; line-height: 1.5; margin-bottom: 8px; }
+  .model-panel .mini-label { margin: 8px 0; }
+  .panel-symbol { font-size: 23px; right: 13px; top: 9px; }
+  .founder-layout { gap: 15px; }
+  .founder-photo img { height: min(31vh, 225px); }
+  .founder-photo figcaption { padding: 6px 8px; font-size: 7px; }
+  .founder-photo figcaption span { font-size: 6px; }
+  .founder-copy h2 { font-size: clamp(27px, 4.2vw, 34px); margin-bottom: 8px; }
+  .founder-copy p { font-size: 11px; line-height: 1.48; margin-bottom: 6px; }
+  .progress-layout { gap: 13px; }
+  .progress-layout .mini-label { font-size: 8px; }
+  .check-list { margin-top: 6px; }
+  .check-list li { padding: 5px 0 5px 17px; font-size: 10px; line-height: 1.42; }
+  .check-list li::before { top: 4px; font-size: 11px; }
+  .work-evidence { gap: 6px; margin: 5px 0; }
+  .work-image img { height: clamp(64px, 11vh, 92px); }
+  .work-image span { padding: 5px 6px; font-size: 6px; }
+  .evidence-note { padding: 7px 9px; margin: 3px 0 7px; font-size: 8px; line-height: 1.45; }
+  .needs-layout { gap: 16px; }
+  .needs-lead { font-size: 15px; line-height: 1.48; }
+  .needs-list .mini-label { padding: 8px 0 4px; font-size: 8px; }
+  .needs-list li { grid-template-columns: 20px 1fr; gap: 6px; padding: 7px 0; font-size: 10px; line-height: 1.4; }
+  .needs-list li span { font-size: 7px; }
+  .section-deck { font-size: 13px; margin-bottom: 9px; }
+  .strategy-cards article { grid-template-columns: 23px 1fr; gap: 7px; padding: 9px 10px; }
+  .strategy-cards article > span { font-size: 8px; }
+  .strategy-cards h3 { font-size: 12px; margin-bottom: 4px; }
+  .strategy-cards p { font-size: 9px; line-height: 1.45; }
+  .roadmap-phases article { padding: 10px 10px 9px 0; }
+  .roadmap-phases article { min-height: 0; }
+  .roadmap-phases article + article { padding-left: 10px; }
+  .phase-top { gap: 6px; font-size: 7px; }
+  .roadmap-phases h3 { font-size: 13px; margin: 6px 0; }
+  .roadmap-phases li { font-size: 8px; line-height: 1.4; padding: 0 0 5px 9px; }
+  .funding-heading { gap: 15px; margin-bottom: 9px; }
+  .funding-heading h2 strong { font-size: clamp(42px, 8vw, 55px); }
+  .funding-heading h2 span { font-size: 10px; }
+  .funding-heading > p { font-size: 10px; line-height: 1.48; }
+  .budget-table th { font-size: 8px; padding: 6px 7px; }
+  .budget-table th:last-child, .budget-table td:last-child { width: 88px; }
+  .budget-table td { font-size: 11px; padding: 8px 7px; }
+  .budget-table tbody tr td:last-child { font-size: 11px; }
+  .budget-table tfoot td { padding: 8px 7px; }
+  .budget-caveat { font-size: 8px; margin-top: 7px; }
+  .outcomes-layout { gap: 14px; }
+  .outcome-list { margin-top: 5px; }
+  .outcome-list li { padding: 5px 0 5px 15px; font-size: 9px; line-height: 1.4; }
+  .outcome-list li::before { font-size: 9px; }
+  .closing-copy { padding-left: 12px; }
+  .closing-promise { font-size: 14px; margin-bottom: 7px; }
+  .closing-copy > p:not(.closing-promise) { font-size: 9px; line-height: 1.45; margin-bottom: 6px; }
+  .signature { padding-top: 6px; margin-top: 6px; }
+  .signature strong { font-size: 10px; }
+  .signature span, .signature a { font-size: 8px; }
+  .closing-footer { padding: 6px 0; gap: 8px; }
+  .closing-footer img { width: 49px; }
+  .closing-footer span { font-size: 6px; }
+  .slide-controls { padding: 0 15px; }
+  .slide-nav { min-width: 82px; gap: 7px; font-size: 17px; }
+  .slide-nav .nav-word { font-size: 7px; }
+  .slide-position { gap: 8px; font-size: 9px; }
+  .slide-position span:first-child { font-size: 13px; }
+  .slide-position i { width: 18px; }
+}
+
+@media (max-width: 420px) {
+  .cover { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr auto; padding: 17px 20px 9px; gap: 8px; }
+  .cover-copy { align-self: start; }
+  .cover h1 { font-size: clamp(61px, 17vw, 76px); margin-bottom: 10px; }
+  .cover .eyebrow { font-size: 8px; margin-bottom: 8px; }
+  .cover-subtitle { font-size: 14px; line-height: 1.4; }
+  .cover-tagline { font-size: 17px; margin-top: 10px; }
+  .cover-rule { margin: 12px 0 8px; }
+  .cover-meta { gap: 23px; }
+  .cover-meta span { font-size: 7px; }
+  .cover-meta strong { font-size: 10px; }
+  .cover-art { height: min(23vh, 150px); max-width: none; padding: 9px; }
+  .cover-art-top, .cover-art-bottom { font-size: 5px; }
+  .art-square { width: 72px; height: 72px; }
+  .art-square-front { font-size: 37px; }
+  .art-line { bottom: 28%; }
+  .art-caption { font-size: 5px; bottom: 6%; }
+  .mark-corner { width: 19px; height: 19px; }
+  .mark-tl { top: 14px; left: 14px; }
+  .mark-br { bottom: 15px; right: 14px; }
+  .mark-plus { font-size: 16px; top: 14%; right: 14%; }
+  .cover-bottom { font-size: 5px; padding-top: 6px; }
+
+  .content-slide { padding: 12px 18px; }
+  .content-slide h2 { font-size: clamp(29px, 7.1vw, 34px); }
+  .slide-heading .eyebrow { font-size: 8px; }
+  .slide-number { font-size: 8px; }
+  .slide-footerline { font-size: 6px; }
+  .summary-copy { grid-template-columns: 1fr; gap: 7px; }
+  .summary-copy p { font-size: 12px; line-height: 1.45; }
+  .summary-copy p:first-child, .summary-copy strong { font-size: 14px; }
+  .overview-lead { font-size: 14px; }
+  .overview-support { font-size: 11px; }
+  .vision-mission { grid-template-columns: 1fr; gap: 6px; }
+  .vision-mission article { padding: 7px 9px; }
+  .vision-mission article p { font-size: 11px; }
+
+  .service-cards { grid-template-columns: 1fr; margin-top: 3px; }
+  .service-cards article, .service-cards article + article { min-height: 0; padding: 7px 0; border-left: 0; border-bottom: 1px solid var(--line); }
+  .service-cards h3 { font-size: 14px; margin: 4px 0; }
+  .service-cards p { max-width: none; font-size: 11px; line-height: 1.4; }
+  .card-rule { display: none; }
+
+  .market-model-grid { grid-template-columns: 1fr; gap: 7px; margin-top: 0; }
+  .market-list { padding: 5px 0; }
+  .market-list ul { margin-top: 4px; }
+  .market-list li { font-size: 12px; padding: 4px 0; }
+  .model-panel { padding: 8px 10px; }
+  .model-panel p:not(.mini-label) { font-size: 10px; margin-bottom: 5px; }
+  .model-panel .mini-label { margin: 4px 0; }
+
+  .founder-layout { grid-template-columns: 1fr; gap: 8px; }
+  .founder-photo { width: 100%; display: grid; grid-template-columns: 76px 1fr; align-items: center; max-height: none; }
+  .founder-photo img { width: 76px; height: 76px; object-fit: cover; object-position: center 20%; }
+  .founder-photo figcaption { align-content: center; gap: 4px; padding: 8px; font-size: 8px; }
+  .founder-photo figcaption span { font-size: 7px; }
+  .founder-copy h2 { font-size: 30px; margin-bottom: 6px; }
+  .founder-copy p { font-size: 11px; line-height: 1.45; margin-bottom: 6px; }
+
+  .progress-layout { grid-template-columns: 1fr; gap: 5px; }
+  .progress-layout .mini-label { font-size: 7px; }
+  .check-list { margin-top: 3px; }
+  .check-list li { font-size: 10px; padding: 4px 0 4px 16px; }
+  .check-list li::before { top: 3px; font-size: 11px; }
+  .work-evidence { grid-template-columns: 1fr 1fr; gap: 6px; margin: 3px 0; }
+  .work-image img { height: 57px; }
+  .work-image span { font-size: 5px; padding: 4px; }
+  .evidence-note { font-size: 8px; padding: 6px 8px; margin: 2px 0 5px; }
+
+  .needs-layout { grid-template-columns: 1fr; gap: 7px; }
+  .needs-lead { font-size: 13px; line-height: 1.42; }
+  .needs-list .mini-label { font-size: 7px; padding: 5px 0 2px; }
+  .needs-list li { grid-template-columns: 18px 1fr; gap: 5px; padding: 5px 0; font-size: 10px; }
+  .needs-list li span { font-size: 7px; }
+
+  .section-deck { font-size: 11px; margin-bottom: 5px; }
+  .strategy-cards article { grid-template-columns: 18px 1fr; gap: 5px; padding: 7px 6px; }
+  .strategy-cards article > span { font-size: 7px; }
+  .strategy-cards h3 { font-size: 10px; margin-bottom: 3px; }
+  .strategy-cards p { font-size: 8px; line-height: 1.4; }
+
+  .roadmap-phases { grid-template-columns: 1fr; overflow: auto; }
+  .roadmap-phases article, .roadmap-phases article + article { padding: 6px 0; border-left: 0; border-bottom: 1px solid var(--line); }
+  .roadmap-phases h3 { font-size: 12px; margin: 3px 0; }
+  .roadmap-phases li { font-size: 10px; line-height: 1.38; padding: 0 0 3px 11px; }
+  .phase-top { font-size: 7px; }
+
+  .funding-heading { grid-template-columns: .7fr 1.3fr; gap: 8px; margin-bottom: 5px; }
+  .funding-heading h2 strong { font-size: 43px; }
+  .funding-heading h2 span { font-size: 8px; }
+  .funding-heading > p { font-size: 8px; line-height: 1.4; }
+  .budget-table th { font-size: 7px; padding: 5px 4px; }
+  .budget-table th:last-child, .budget-table td:last-child { width: 65px; }
+  .budget-table td { font-size: 10px; padding: 6px 4px; }
+  .budget-table tbody tr td:last-child { font-size: 10px; }
+  .budget-table tfoot td { padding: 6px 4px; }
+  .budget-caveat { font-size: 7px; line-height: 1.4; margin-top: 5px; }
+
+  .outcomes-layout { grid-template-columns: 1fr; gap: 7px; }
+  .outcome-list { margin-top: 3px; }
+  .outcome-list li { font-size: 10px; padding: 4px 0 4px 16px; }
+  .closing-copy { padding: 7px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .closing-promise { font-size: 15px; margin-bottom: 5px; }
+  .closing-copy > p:not(.closing-promise) { font-size: 10px; line-height: 1.4; margin-bottom: 5px; }
+  .signature { padding-top: 5px; margin-top: 5px; }
+  .signature strong { font-size: 11px; }
+  .signature span, .signature a { font-size: 8px; }
+  .closing-footer { padding: 4px 0; gap: 6px; }
+  .closing-footer img { width: 42px; }
+  .closing-footer span { font-size: 5px; }
+}
+
+@media (min-width: 421px) and (max-width: 700px) {
+  .service-cards h3 { font-size: 16px; }
+  .service-cards p { font-size: 13px; line-height: 1.45; }
+  .market-list li { font-size: 16px; }
+  .model-panel p:not(.mini-label) { font-size: 13px; }
+  .founder-copy p { font-size: 13px; }
+  .progress-layout .mini-label { font-size: 9px; }
+  .check-list li { font-size: 12px; }
+  .evidence-note { font-size: 10px; }
+  .needs-lead { font-size: 17px; }
+  .needs-list li { font-size: 12px; }
+  .strategy-cards h3 { font-size: 16px; }
+  .strategy-cards p { font-size: 12px; }
+  .phase-top { font-size: 9px; }
+  .roadmap-phases h3 { font-size: 17px; }
+  .roadmap-phases li { font-size: 12px; }
+  .funding-heading h2 span { font-size: 11px; }
+  .funding-heading > p { font-size: 12px; }
+  .budget-table th { font-size: 9px; }
+  .budget-table td, .budget-table tbody tr td:last-child { font-size: 13px; }
+  .budget-caveat { font-size: 9px; }
+  .outcome-list li { font-size: 11px; }
+  .closing-copy > p:not(.closing-promise) { font-size: 11px; }
+  .slide-footerline { font-size: 7px; }
+}
+
+@media (max-width: 420px) {
+  .service-cards h3 { font-size: 13px; }
+  .service-cards p { font-size: 12px; line-height: 1.4; }
+  .market-list li { font-size: 13px; }
+  .model-panel p:not(.mini-label) { font-size: 11px; }
+  .founder-copy p { font-size: 12px; line-height: 1.4; }
+  .check-list li, .needs-list li { font-size: 11px; }
+  .strategy-cards h3 { font-size: 11px; }
+  .strategy-cards p { font-size: 9px; }
+  .roadmap-phases { overflow: visible; }
+  .roadmap-phases h3 { font-size: 13px; }
+  .roadmap-phases li { font-size: 11px; }
+  .budget-table td, .budget-table tbody tr td:last-child { font-size: 11px; }
+  .outcome-list li, .closing-copy > p:not(.closing-promise) { font-size: 11px; }
+}
+
+@media (max-height: 680px) and (min-width: 701px) {
+  .content-slide { padding-top: 17px; padding-bottom: 17px; }
+  .content-slide h2 { font-size: clamp(38px, 5.3vh, 46px); margin-bottom: 15px; }
+  .slide-heading { margin-bottom: 14px; }
+  .service-cards article { min-height: 235px; }
+  .founder-photo img { height: 34vh; }
+  .roadmap-phases li { font-size: 13px; padding-bottom: 7px; }
+}
